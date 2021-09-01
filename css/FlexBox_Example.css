@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 3px solid #4b4b4b;
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.box1 {
+  background: red;
+}
+
+.box2 {
+  background: #91ff00;
+}
+
+.box3 {
+  background: #0051ff;
+}
+
+.box4 {
+  background: #4b4b4b;
+}
+
+.box5 {
+  background: #ffee00;
+}
+
+.box6 {
+  background: #00eeff;
+}
+/*# sourceMappingURL=FlexBox_Example.css.map */
