@@ -70,8 +70,11 @@ body {
             align-items: center;
             min-height: 10vh;
             padding: 1rem;
-            background: rgb(190, 0, 0);
+            background: rgb(255, 0, 0);
             box-shadow: 0px 1px 6px #7c7c7c;
+            h1 {
+                color: #fff;
+            }
         }
     }
 
@@ -83,7 +86,7 @@ body {
         padding: 1rem 2rem;
         font-size: 15px;
         text-decoration: none;
-        color: #454647;
+        color: #000;
         font-weight: bold;
     }
     .main-menu ul li ul {
@@ -131,6 +134,7 @@ section.hero {
     background-position: center;
     .container {
         width: 100vw;
+        height: 84vh;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -144,9 +148,15 @@ section.hero {
             text-shadow: 2px 4px 5px #000;
             text-align: center;
             margin: 2rem 0 0 0;
+            cursor: pointer;
             span {
-                color: rgb(216, 9, 9);
+                color: rgb(255, 0, 0);
                 font-size: 3rem;
+                transition: 0.5s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    font-size: 3.25rem;
+                }
             }
         }
         button {
@@ -156,49 +166,60 @@ section.hero {
             border: none;
             border-radius: 1rem;
             margin-bottom: 2rem;
+            background: rgb(255, 0, 0);
+            color: #fff;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                color: rgb(255, 0, 0);
+                background: #fff;
+                cursor: pointer;
+                padding: 1rem 1.5rem;
+            }
         }
     }
 }
 /////////////////////////////////////////////////////////
 section.intro {
-    display: flex;
-    direction: ltr;
-    flex-wrap: wrap;
-    figure {
-        img {
-            width: 100%;
-            height: 23rem;
-        }
-    }
-
-    .intro-image {
-        flex: 1 1 20rem;
-        height: 23rem;
-    }
-    .intro-text {
-        height: 23rem;
-        flex: 1 1 30rem;
+    .container {
+        width: 100vw;
         display: flex;
-        flex-direction: column;
-        background: #ddd;
-        justify-content: center;
-        align-items: center;
-        // height: 64vh;
-        h2,
-        p {
-            color: rgb(58, 58, 58);
-            font-weight: bold;
-            line-height: 4rem;
+        direction: ltr;
+        flex-wrap: wrap;
+        .intro-image {
+            flex: 1 1 20rem;
+            figure {
+                height: 55vh;
+                img {
+                    width: 100%;
+                    height: 61vh;
+                }
+            }
         }
-        h2 {
-            font-size: 1.5rem;
-        }
-        p {
-            font-size: 1rem;
-        }
-        span {
-            color: rgb(0, 4, 255);
-            font-size: 1.5rem;
+        .intro-text {
+            flex: 1 1 30rem;
+            display: flex;
+            flex-direction: column;
+            background: #ddd;
+            justify-content: center;
+            align-items: center;
+            height: 61vh;
+            h2,
+            p {
+                color: rgb(58, 58, 58);
+                font-weight: bold;
+                line-height: 4rem;
+            }
+            h2 {
+                font-size: 1rem;
+            }
+            p {
+                font-size: 0.75rem;
+                padding: 0.5rem 0;
+            }
+            span {
+                color: rgb(0, 4, 255);
+                font-size: 1rem;
+            }
         }
     }
 }

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../FlexBox_Project/Responsive.scss"
+    ],
+    "names": [],
+    "file": "Responsive.css"
+}

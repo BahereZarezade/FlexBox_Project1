@@ -71,8 +71,12 @@ body a {
   align-items: center;
   min-height: 10vh;
   padding: 1rem;
-  background: #be0000;
+  background: red;
   box-shadow: 0px 1px 6px #7c7c7c;
+}
+
+.header .main-menu ul h1 {
+  color: #fff;
 }
 
 .header .main-menu > ul > li {
@@ -84,7 +88,7 @@ body a {
   padding: 1rem 2rem;
   font-size: 15px;
   text-decoration: none;
-  color: #454647;
+  color: #000;
   font-weight: bold;
 }
 
@@ -138,6 +142,7 @@ section.hero {
 
 section.hero .container {
   width: 100vw;
+  height: 84vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -153,11 +158,18 @@ section.hero .container h2 {
   text-shadow: 2px 4px 5px #000;
   text-align: center;
   margin: 2rem 0 0 0;
+  cursor: pointer;
 }
 
 section.hero .container h2 span {
-  color: #d80909;
+  color: red;
   font-size: 3rem;
+  transition: 0.5s ease-in-out;
+}
+
+section.hero .container h2 span:hover {
+  cursor: pointer;
+  font-size: 3.25rem;
 }
 
 section.hero .container button {
@@ -167,51 +179,66 @@ section.hero .container button {
   border: none;
   border-radius: 1rem;
   margin-bottom: 2rem;
+  background: red;
+  color: #fff;
+  transition: 0.5s ease-in-out;
 }
 
-section.intro {
+section.hero .container button:hover {
+  color: red;
+  background: #fff;
+  cursor: pointer;
+  padding: 1rem 1.5rem;
+}
+
+section.intro .container {
+  width: 100vw;
   display: flex;
   direction: ltr;
   flex-wrap: wrap;
 }
 
-section.intro figure img {
-  width: 100%;
-  height: 23rem;
-}
-
-section.intro .intro-image {
+section.intro .container .intro-image {
   flex: 1 1 20rem;
-  height: 23rem;
 }
 
-section.intro .intro-text {
-  height: 23rem;
+section.intro .container .intro-image figure {
+  height: 55vh;
+}
+
+section.intro .container .intro-image figure img {
+  width: 100%;
+  height: 61vh;
+}
+
+section.intro .container .intro-text {
   flex: 1 1 30rem;
   display: flex;
   flex-direction: column;
   background: #ddd;
   justify-content: center;
   align-items: center;
+  height: 61vh;
 }
 
-section.intro .intro-text h2,
-section.intro .intro-text p {
+section.intro .container .intro-text h2,
+section.intro .container .intro-text p {
   color: #3a3a3a;
   font-weight: bold;
   line-height: 4rem;
 }
 
-section.intro .intro-text h2 {
-  font-size: 1.5rem;
-}
-
-section.intro .intro-text p {
+section.intro .container .intro-text h2 {
   font-size: 1rem;
 }
 
-section.intro .intro-text span {
+section.intro .container .intro-text p {
+  font-size: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+section.intro .container .intro-text span {
   color: #0004ff;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=FlexBox_Project.css.map */
